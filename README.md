@@ -1,4 +1,4 @@
-# Steam VAC Grabber
+# Steam VAC Checker
 
 A simple Python script to check VAC bans of players on Steam using the Steam Web API.
 
