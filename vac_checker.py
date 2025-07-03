@@ -5,7 +5,7 @@ def get_vac_status(steam_id, api_key):
     url = f"https://api.steampowered.com/ISteamUser/GetPlayerBans/v1/?key={api_key}&steamids={steam_id}"
     response = requests.get(url)
     if response.status_code != 200:
-        print(f"Chyba při dotazu na Steam API: {response.status_code}")
+        print(f"Error querying the Steam API: {response.status_code}")
         return None
     data = response.json()
     if "players" not in data or len(data["players"]) == 0:
